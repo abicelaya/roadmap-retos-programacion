@@ -18,17 +18,17 @@ console.log(num2 / num1); // división
 console.log(num2++); // incremento
 console.log(num2--); // decremento
 
+// Operador condicional (Ternario)
+let edad = 16;
+let edadParaBeber = edad >= 18 ? "Puedes beber" : "No puedes beber";
+console.log(edadParaBeber);
+
 // Operador condicional
 if (edad >= 18) {
   console.log("Puedes beber");
 } else {
   console.log("No puedes beber");
 }
-
-// Operador condicional (Ternario)
-let edad = 16;
-let edadParaBeber = edad >= 18 ? "Puedes beber" : "No puedes beber";
-console.log(puedeBeber);
 
 // Operadores lógicos
 let resultado1 = num1 > num2 && num1 > 1;
@@ -48,11 +48,8 @@ console.log(cadena1 + " JavaScript");
     entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
 */
 
-let numerosGuardados = 10;
-
 for (let i = 10; i <= 55; i++) {
   if (i % 2 == 0 && i != 16 && i % 3 != 0) {
-    numerosGuardados += i;
     console.log(i);
   }
 }
